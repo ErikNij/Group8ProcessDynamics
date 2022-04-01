@@ -1,0 +1,195 @@
+### Checking the status of model reference code generation target for model 'TTS' used in 'OneTank'
+### Model reference code generation target (TTS.c) for model TTS is out of date because TTS.c does not exist.
+ 
+----------------------------------------------------------------------
+Starting build procedure with RTI 7.13 (RTI1104, 02-Nov-2019)
+Model: "TTS" (E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\TTS.slx)
+----------------------------------------------------------------------
+*** Model reference build   : "REFERENCED MODEL"
+*** Using configuration set : "TTS_configuration"
+*** Working directory       : "E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory"
+*** Initializing code generation
+### Starting Simulink Coder build procedure for model: TTS
+### Generating code and artifacts to 'Model specific' folder structure
+### Generating code into build folder: E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\slprj\rti1104\TTS
+Warning: Output port 1 of 'TTS/Set Valve 4 Position' is not connected.
+### Invoking Target Language Compiler on TTS.rtw
+### Using System Target File: C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI1104\TLC\rti1104.tlc
+..
+### Loading TLC function libraries
+.....
+### Initial pass through model to cache user defined code
+..
+*** Postprocessing RTI blocks
+.
+### Caching model source code
+............................................
+### Writing header file TTS_types.h
+.
+### Writing source file TTS.c
+### Writing header file TTS_private.h
+### Writing header file TTS.h
+### Writing header file rtwtypes.h
+### Writing header file model_reference_types.h
+### Writing header file multiword_types.h
+### TLC code generation complete.
+### Generating TLC interface API.
+.........
+*** Generating Variable Description File TTS.trc
+
+-------------------------------------------------------------------------------
+NOTE: The following option in the Configuration Parameters dialog has been
+      used:
+
+      Optimization:
+      "Conditional input branch execution" On
+
+      This leads to code optimization in which blocks are not computed if their
+      outputs are not required in the simulation step, for example, if their
+      output values are used as input for a Switch block and the Switch
+      currently routes another signal. When the corresponding output signals
+      are displayed in ControlDesk, their values are static.
+
+      To ensure that the blocks are computed, turn off the 
+      "Conditional input branch execution" option and rebuild the model.
+-------------------------------------------------------------------------------
+..
+*** Generating template: User Makefile TTS_usr.mk
+.
+### Processing Template Makefile: C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI1104\RTI\rti1104.tmf
+### Creating E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\slprj\rti1104\TTS\TTS.mk from C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI1104\RTI\rti1104.tmf
+### Building TTS_rtwlib: .\TTS.bat
+
+E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\slprj\rti1104\TTS>set MATLAB=C:\Program Files\MATLAB\R2019b 
+
+E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\slprj\rti1104\TTS>"C:\Program Files\dSPACE RCPHIL 2019-B\Exe\dsmake.exe" -f TTS.mk  EXTMODE_STATIC_ALLOC=0 TMW_EXTMODE_TESTING=0 EXTMODE_STATIC_ALLOC_SIZE=1000000 EXTMODE_TRANSPORT=0 MAT_FILE=0 COMBINE_OUTPUT_UPDATE_FCNS=0 INCLUDE_MDL_TERMINATE_FCN=1 MULTI_INSTANCE_CODE=0 ISPROTECTINGMODEL=NOTPROTECTING 
+
+BUILDING REFERENCED MODEL "TTS"
+
+WORK  DIRECTORY "E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory"
+BUILD DIRECTORY "E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\slprj\rti1104\TTS"
+TARGET COMPILER "C:\ProgramData\dSPACE\FB5D6055-D72A-4C42-B90B-79879AEABE10\Compiler\PPCTools" 
+
+COMPILING  "TTS.c" 
+COMPILING  "TTS_trc_ptr.c" 
+
+
+BUILDING LIBRARY "TTS_rtwlib.lib" ...
+BUILDING LIBRARY FINISHED
+
+MAKE PROCESS SUCCEEDED
+
+
+### Successful completion of Simulink Coder build procedure for model: TTS
+*** Finished RTI build procedure for model TTS 
+----------------------------------------------------------------------
+### Simulink cache artifacts for 'TTS' were created in 'E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\TTS.slxc'.
+ 
+----------------------------------------------------------------------
+Starting build procedure with RTI 7.13 (RTI1104, 02-Nov-2019)
+Model: "OneTank" (E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank.slx)
+----------------------------------------------------------------------
+*** Model reference build   : "TOP LEVEL MODEL"
+*** Using configuration set : "TTS_configuration"
+*** Working directory       : "E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory"
+*** Initializing code generation
+### Starting Simulink Coder build procedure for model: OneTank
+### Generating code and artifacts to 'Model specific' folder structure
+### Generating code into build folder: E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank_rti1104
+Warning: Output port 1 of 'TTS/Set Valve 4 Position' is not connected.
+*** Optional User System Description File onetank_usr.sdf not available
+### Invoking Target Language Compiler on OneTank.rtw
+### Using System Target File: C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI1104\TLC\rti1104.tlc
+..
+### Loading TLC function libraries
+.....
+### Initial pass through model to cache user defined code
+........
+*** Postprocessing RTI blocks
+.
+*** Starting I/O block checking
+
+*** RTI Build: Invoking TLCCheck:
+      + rti1104check()...                       passed.
+*** Passed I/O block checking
+### Caching model source code
+......................................................
+### Writing header file OneTank_types.h
+### Writing header file OneTank.h
+### Writing source file OneTank.c
+.
+### Writing header file OneTank_private.h
+### Writing header file rtmodel.h
+### Writing source file OneTank_data.c
+### TLC code generation complete.
+### Generating TLC interface API.
+...........................................
+*** Generating file OneTank_rti.c
+*** Generating file OneTank_rti.mk
+*** Generating Variable Description File OneTank.trc
+
+-------------------------------------------------------------------------------
+NOTE: The following option in the Configuration Parameters dialog has been
+      used:
+
+      Optimization:
+      "Conditional input branch execution" On
+
+      This leads to code optimization in which blocks are not computed if their
+      outputs are not required in the simulation step, for example, if their
+      output values are used as input for a Switch block and the Switch
+      currently routes another signal. When the corresponding output signals
+      are displayed in ControlDesk, their values are static.
+
+      To ensure that the blocks are computed, turn off the 
+      "Conditional input branch execution" option and rebuild the model.
+-------------------------------------------------------------------------------
+.........
+*** Generating template: User-Code File OneTank_usr.c
+*** Generating template: User Makefile OneTank_usr.mk
+*** Optional User Variable Description File TTS_usr.trc not available
+*** Optional User Variable Description File OneTank_usr.trc not available
+.
+### Processing Template Makefile: C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI1104\RTI\rti1104.tmf
+### Creating E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank_rti1104\OneTank.mk from C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI1104\RTI\rti1104.tmf
+### Building OneTank: .\OneTank.bat
+
+E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank_rti1104>set MATLAB=C:\Program Files\MATLAB\R2019b 
+
+E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank_rti1104>"C:\Program Files\dSPACE RCPHIL 2019-B\Exe\dsmake.exe" -f OneTank.mk  EXTMODE_STATIC_ALLOC=0 TMW_EXTMODE_TESTING=0 EXTMODE_STATIC_ALLOC_SIZE=1000000 EXTMODE_TRANSPORT=0 MAT_FILE=0 COMBINE_OUTPUT_UPDATE_FCNS=0 INCLUDE_MDL_TERMINATE_FCN=1 MULTI_INSTANCE_CODE=0 ISPROTECTINGMODEL=NOTPROTECTING 
+
+BUILDING APPLICATION "OneTank" (Single Timer Task Mode)
+
+WORK  DIRECTORY "E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory"
+BUILD DIRECTORY "E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank_rti1104"
+TARGET COMPILER "C:\ProgramData\dSPACE\FB5D6055-D72A-4C42-B90B-79879AEABE10\Compiler\PPCTools" 
+
+COMPILING  "OneTank.c" 
+COMPILING  "OneTank_data.c" 
+COMPILING  "OneTank_trc_ptr.c" 
+COMPILING  "C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI\C\rti_sim_engine.c" 
+COMPILING  "C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI\C\rti_init_c.c" 
+COMPILING  "C:\PROGRA~1\MATLAB\R2019b\rtw\c\src\rt_sim.c" 
+COMPILING  "C:\Program Files\dSPACE RCPHIL 2019-B\MATLAB\RTI\RTI\C\rti_assert.c" 
+
+LINKING APPLICATION ...
+LINKING FINISHED
+
+MAKE PROCESS SUCCEEDED
+
+
+*** Updating SDF file OneTank.sdf
+*** Updating Variable Description File OneTank.trc
+
+LOADING APPLICATION "OneTank.sdf" ...
+  PLATFORM:      ds1104
+[#1] ds1104 - RTLIB: Application UUID: BEA3178B-4FCC-4EDF-86FF-F171AF1303B3 (0)
+[#2] ds1104 - RTI: Initializing ... (720)
+[#3] ds1104 - RTI: Initialization completed (721)
+[#4] ds1104 - RTI: Simulation state: STOP (702)
+
+LOADING FINISHED
+### Successful completion of Simulink Coder build procedure for model: OneTank
+*** Finished RTI build procedure for model OneTank 
+----------------------------------------------------------------------
+### Simulink cache artifacts for 'OneTank' were created in 'E:\RemoteLabs_HostPC_software\RT-platform-interface\hostpc\working_directory\OneTank.slxc'.
