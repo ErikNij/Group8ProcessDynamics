@@ -1,4 +1,4 @@
-function [s,K,A,tau,tau_D] = TransferFunctionFinder
+    function [s,K,A,tau,tau_D] = TransferFunctionFinder
 
 directory = 'C:\Users\20191255\Documents\GitHub\Group8ProcessDynamics\6E8X0_RL_StartUp_Software\Experiment files - Live Interaction (6E8X0) Q3 2021-2022 7877-20817\20817_setupOutput\ExperimentTTS_20817.mat';
 IDNumber = directory(end-8:end-4);
