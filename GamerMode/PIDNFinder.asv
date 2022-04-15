@@ -1,9 +1,0 @@
-function [FinalP] = PIDNFinder(~)
-
-TargetH_mm = 350;
-
-opts =optimoptions('lsqnonlin','display','iter-detailed','FiniteDifferenceStepSize',1e-2,'UseParallel',true);
-ub = 
-[FinalP] = lsqnonlin(@SimulationErrFinder,1,0,10,opts,TargetH_mm);
-
-end

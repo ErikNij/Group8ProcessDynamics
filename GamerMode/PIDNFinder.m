@@ -1,11 +1,13 @@
-function [FinalP] = PIDNFinder(~)
-
-TargetH_mm = 350;
+function [FinalCoeffs] = PIDNFinder(~)
+%Setting the target height
+TargetH_mm = 250;
 
 opts =optimoptions('lsqnonlin','display','iter-detailed','UseParallel',true,'FiniteDifferenceStepSize',5e-5);
-ub = [0.1/TargetH_mm,0.001,1,100];
-lb = [0,0,0,0];
+%Setting bounds and intial conditions
+ub = [0.1/250,0.1/2500,0.1/25];
+lb = [0,0,0];
 init = ub/2;
-[FinalP] = lsqnonlin(@SimulationErrFinder,init,lb,ub,opts,TargetH_mm);
+%Running the built in optimization tool.
+[FinalCoeffs] = lsqnonlin(@SimulationErrFinder,init,lb,ub,opts,TargetH_mm);
 
 end

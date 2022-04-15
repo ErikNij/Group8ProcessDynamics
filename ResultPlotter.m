@@ -1,4 +1,4 @@
-function [] = ResultPlotter
+    function [] = ResultPlotter
 
 directory = 'C:\Users\20191255\Documents\GitHub\Group8ProcessDynamics\6E8X0_RL_StartUp_Software\Experiment files - Live Interaction (6E8X0) Q3 2021-2022 7792-20677\20677_setupOutput\ExperimentTTS_20677.mat';
 target = 370;
